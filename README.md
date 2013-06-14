@@ -52,6 +52,10 @@ Once you have these:
     # Checkout the project
     $ git clone git://github.com/malclocke/fulcrum.git
     $ cd fulcrum
+    
+    # Install QT in Mountail Lion with Homebrew [View the QT install page](https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit)
+    $ brew update
+    $ brew install qt
 
     # Install the project dependencies
     $ gem install bundler
