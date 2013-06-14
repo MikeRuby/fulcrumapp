@@ -1,4 +1,5 @@
 @import 'compass/css3';
+@import 'settings';
 @import 'scaffold';
 @import 'jquery_gritter';
 @import 'jquery_tagit';
@@ -48,20 +49,19 @@ a img {
 }
 
 #header {
-  background: $darkgrey;
-  @include background(linear-gradient(top, $darkgrey, $darkgrey*0.75));
-  border-bottom: 1px solid $darkgrey*0.7;
+  height: 45px;
+//  background: $darkgrey;
+//  @include background(linear-gradient(top, $darkgrey, $darkgrey*0.75));
+//  border-bottom: 1px solid $darkgrey*0.7;
   @include box-shadow(0 1px 2px #aaaaaa);
-  text-shadow: black 0 1px 0;
+//  text-shadow: black 0 1px 0;
   position: relative;
   z-index: 900;
 }
 
 ul#primary-nav {
   text-align: right;
-  background-image: image-url('logo.png');
-  background-repeat: no-repeat;
-  background-position: 13px 6px;
+  background: image-url('logo.png') no-repeat 13px 6px;
   margin: 0;
   padding: 1em 1em 1em 40px;
   color: white;
@@ -71,12 +71,16 @@ ul#primary-nav li {
   display: inline;
 }
 ul#primary-nav li a {
-  color: white;
+  height: 20px;
+  color: $aluminium-4;
   text-decoration: none;
 }
 ul#primary-nav li.root {
   float: left;
   font-size: large;
+  a {
+    @include hide-text-1;
+  }
 }
 ul#primary-nav li.secondary {
   position: relative;
@@ -85,7 +89,7 @@ ul#primary-nav li.secondary {
   background-position-x:right;
   padding: 0.4em 18px 0.4em 0.4em;
   @include border-radius(5px);
-  text-shadow: black 0 1px 0;
+//  text-shadow: black 0 1px 0;
 }
 ul#primary-nav li.secondary ul {
   visibility: hidden;
