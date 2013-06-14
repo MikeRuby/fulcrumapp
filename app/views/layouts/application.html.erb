@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= "#{@project.name} - " if @project %><%= t('fulcrum') %></title>
+  <title><%= "#{@project.name} - " if @project %><%= t('managment') %></title>
   <%= csrf_meta_tag %>
   <%= stylesheet_link_tag "//ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css" %>
   <%= stylesheet_link_tag :application %>
   <%= javascript_include_tag :application %>
+  <link rel="shortcut icon" href="favicon.png" />
   <script type="text/javascript">
     I18n.defaultLocale = "<%= I18n.default_locale %>";
     I18n.locale = "<%= I18n.locale %>";
@@ -16,7 +17,7 @@
 
 <div id="header">
   <ul id="primary-nav">
-    <li class="root"><%= link_to t('fulcrum'), root_path %></li>
+    <li class="root"><%= link_to t('managment'), root_path %></li>
     <% if current_user %>
       <li<%= ' class="secondary"'.html_safe if current_user.projects.present? %>>
         <%= link_to Project.model_name.human(:count => 2), root_path %>
