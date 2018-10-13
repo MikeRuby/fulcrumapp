@@ -101,6 +101,6 @@ RLPMS is built with the following Open Source technologies:
 * [Backbone.js](http://documentcloud.github.com/backbone/)
 * [jQuery](http://jquery.com/)
 * [Tango Icon Library](http://tango.freedesktop.org/Tango_Icon_Library)
-* [Jasmine](http://pivotal.github.com/jasmine/)
+* [Jasmine](https://jasmine.github.io/)
 * [Sinon](http://sinonjs.org/)
 * [Fulcrum](http://wholemeal.co.nz/projects/fulcrum.html)
